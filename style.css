@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #e3f9ff; */
+  background-color: #000;
+}
+
+#calculator {
+  padding: 20px;
+  background-color: #3a4452;
+  border-radius: 10px;
+}
+
+#calculator form input {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  outline: none;
+  box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+#display {
+  display: flex;
+  justify-content: flex-end;
+  margin: 20px 0;
+}
+form #display input {
+  text-align: right;
+  flex: 1;
+  font-size: 45px;
+  box-shadow: none;
+}
+form input#equal {
+  width: 145px;
+}
+
+@media only screen and (max-width: 380px) {
+  #calculator form input {
+    width: 50px;
+  height: 50px;
+    margin: 5px;
+  }
+}
